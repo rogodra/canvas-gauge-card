@@ -165,7 +165,7 @@ export class CanvasGaugeCard extends LitElement {
     return html`
       <style>
         :host {
-          box-shadow: "transparent";
+          box-shadow: 0px 0px 0px 0px;
           display: block !important;
           border-radius: 8px !important;
           transition: all 0.3s ease-out !important;
