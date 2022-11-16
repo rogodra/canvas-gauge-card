@@ -165,13 +165,11 @@ export class CanvasGaugeCard extends LitElement {
     return html`
       <style>
         :host {
-          box-shadow: 0px 0px 0px 0px;
+          box-shadow: var(--ha-card-box-shadow);
           display: block !important;
-          border-radius: 8px !important;
+          border-radius: var(--ha-card-border-radius) !important;
           transition: all 0.3s ease-out !important;
-          background-color: ${this._config.background_color
-            ? this._config.background_color
-            : "transparent"} !important;
+          background-color: var(--ha-card-background) !important;
         }
         #cardroot {
           width: ${this._gaugeWidth}px;
